@@ -1,25 +1,27 @@
 Sign up here!
+New Sign Up Page
 
-<%= form_for @user do |signUp|%>
+
+<%= form_for @user do |f|%>
 
 <div>
-  <%= signUp.text_field :first_name, placeholder: "First Name" %>
+  <%= f.text_field :first_name, placeholder: "First Name" %>
 </div>
 
 <div>
-  <%= signUp.text_field :last_name, placeholder: "Last Name" %>
+  <%= f.text_field :last_name, placeholder: "Last Name" %>
 </div>
 
 <div>
-  <%= signUp.text_field :email, placeholder: "Email" %>
+  <%= f.text_field :email, placeholder: "Email" %>
 </div>
 
 <div>
-  <%= signUp.password_field :password, placeholder: "Password" %>
+  <%= f.password_field :password, placeholder: "Password" %>
 </div>
 
 <div>
-  <%= signUp.submit "Sign Up" %>
+  <%= f.submit "Sign Up" %>
 </div>
 
 <% end %>
